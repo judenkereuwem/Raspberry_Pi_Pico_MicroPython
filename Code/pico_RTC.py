@@ -26,5 +26,3 @@ oled.text("Time: ", 0, 30)
 oled.text(':'.join(str(x) for x in time), 48, 30)
 oled.show()
 
-
-
