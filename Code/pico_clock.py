@@ -11,7 +11,6 @@ while True:
     
     #Initialize RTC
     rtc = RTC()
-    date = rtc.datetime()[0:3]
     time = rtc.datetime()[4:7]
     
     print("Time: ", ':'.join(str(x) for x in time))
