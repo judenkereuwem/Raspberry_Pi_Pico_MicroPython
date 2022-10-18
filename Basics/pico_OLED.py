@@ -6,5 +6,4 @@ oled = SSD1306_I2C(128, 64, i2c)
 
 oled.text("  Welcome  to", 0, 16)
 oled.text("  Placidlearn", 0, 30)
-#oled.text("It worked!", 0, 32)
 oled.show()
