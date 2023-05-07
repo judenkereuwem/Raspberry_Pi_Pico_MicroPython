@@ -1,13 +1,11 @@
 from machine import ADC, Pin
-import utime
+from time import sleep
 
-analog_value = machine.ADC(28)
-convertion_factor = 3.3/(65535)
+photoRes = ADC(Pin(28))
 
 while True:
-    reading = analog_value.read_u16()
-    voltage_value = reading * convertion_factor
-    print("ADC values: ", reading)
-    print("Voltage:    ",voltage_value)
-    print(" ")
-    utime.sleep(0.5)
+    light = photoRes.read_u16()
+    light = int(light/65535*100)
+    print(light)
+    sleep(0.5)
+
