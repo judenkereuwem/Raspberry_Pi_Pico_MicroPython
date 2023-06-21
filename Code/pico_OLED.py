@@ -1,3 +1,5 @@
+#install "micropython-ssd1306" library
+
 from machine import Pin, I2C
 from ssd1306 import SSD1306_I2C
 
